@@ -19,31 +19,31 @@ importScripts('workbox-sw.prod.v1.3.0.js');
  */
 const fileManifest = [
   {
-    "url": "/_nuxt/app.d7aeb301fa41bfea2079.js",
-    "revision": "c9680fa1ba3f696f7947f55fa2d46ecc"
+    "url": "/nuxt-fluent-bootstrap/_nuxt/app.31e89bc8ad68f0746c6f.js",
+    "revision": "e1d22a3ac8e9195c08c0e77dba860046"
   },
   {
-    "url": "/_nuxt/common.68902de77d0816a451efe47a6e85781d.css",
-    "revision": "d9295ff133a9eed1587b06fe8497367d"
-  },
-  {
-    "url": "/_nuxt/common.6bc6ca04799cd9cb5af8.js",
+    "url": "/nuxt-fluent-bootstrap/_nuxt/common.6bc6ca04799cd9cb5af8.js",
     "revision": "36b772c9c7051b28a4e27259b338b1b7"
   },
   {
-    "url": "/_nuxt/layouts/default.55344220c5814ec85504.js",
+    "url": "/nuxt-fluent-bootstrap/_nuxt/common.a84eee6e638f7a8cdf7143a2623dcd42.css",
+    "revision": "a5ea91c5f7fa7fb66f3a75973418be83"
+  },
+  {
+    "url": "/nuxt-fluent-bootstrap/_nuxt/layouts/default.55344220c5814ec85504.js",
     "revision": "429dc1e726229409b7ffef57ab29040c"
   },
   {
-    "url": "/_nuxt/manifest.f6b44681facb39bd17d3.js",
-    "revision": "4da1810f7a955fbbc0f0f3de2ff80e2b"
+    "url": "/nuxt-fluent-bootstrap/_nuxt/manifest.6e8e659bb99a4c036d60.js",
+    "revision": "f0662dcfef00d9e944f1e06511387394"
   },
   {
-    "url": "/_nuxt/pages/form.ea57ac993c0bb2d20605.js",
+    "url": "/nuxt-fluent-bootstrap/_nuxt/pages/form.ea57ac993c0bb2d20605.js",
     "revision": "0229df82fe680c32c8bedcc3190367cb"
   },
   {
-    "url": "/_nuxt/pages/index.3e09192243a35aa7c83f.js",
+    "url": "/nuxt-fluent-bootstrap/_nuxt/pages/index.3e09192243a35aa7c83f.js",
     "revision": "63ba76a94be89b96ec1179d6d199efa9"
   }
 ];
@@ -54,5 +54,5 @@ const workboxSW = new self.WorkboxSW({
   "directoryIndex": "/"
 });
 workboxSW.precache(fileManifest);
-workboxSW.router.registerRoute('/**', workboxSW.strategies.networkFirst({}), 'GET');
-workboxSW.router.registerRoute('/_nuxt/**', workboxSW.strategies.cacheFirst({}), 'GET');
+workboxSW.router.registerRoute('/nuxt-fluent-bootstrap/**', workboxSW.strategies.networkFirst({}), 'GET');
+workboxSW.router.registerRoute('/nuxt-fluent-bootstrap/_nuxt/**', workboxSW.strategies.cacheFirst({}), 'GET');
