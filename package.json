@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/disjfa/nuxt-fluent-bootstrap/issues"
   },
-  "homepage": "https://github.com/disjfa/nuxt-fluent-bootstrap#readme"
+  "homepage": "https://github.com/disjfa/nuxt-fluent-bootstrap#readme",
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
 }

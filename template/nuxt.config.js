@@ -5,6 +5,9 @@ module.exports = {
   build: {
     extractCSS: true,
   },
+  router: {
+    base: '/nuxt-fluent-bootstrap/'
+  },
   /*
   ** Headers
   ** Common headers are already provided by @nuxtjs/pwa preset
@@ -13,7 +16,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: {color: '#3B8070'},
   /*
   ** Customize app manifest
   */
@@ -29,6 +32,6 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa',
-    ['@nuxtjs/bootstrap-vue', { css: false }],
+    ['@nuxtjs/bootstrap-vue', {css: false}],
   ],
 };
