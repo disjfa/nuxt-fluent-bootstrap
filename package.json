@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-fluent-bootstrap",
+  "version": "0.1.0",
+  "description": "Nuxt template using fluent bootstrap",
+  "scripts": {
+    "deploy": "gh-pages -d template/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disjfa/nuxt-fluent-bootstrap.git"
+  },
+  "keywords": [
+    "nuxt",
+    "css",
+    "bootstrap",
+    "vuejs"
+  ],
+  "author": "disjfa <disjfa@disjfa.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/disjfa/nuxt-fluent-bootstrap/issues"
+  },
+  "homepage": "https://github.com/disjfa/nuxt-fluent-bootstrap#readme"
+}
