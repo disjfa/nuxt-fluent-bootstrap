@@ -9,9 +9,12 @@
     "@nuxtjs/pwa": "latest",
     "bootstrap": "^4.0.0-beta.2",
     "fluent-bootstrap": "^0.1.0",
+    "install": "^0.10.1",
+    "npm": "^5.5.1",
     "nuxt": "latest",
     "resolve-url": "^0.2.1",
-    "resolve-url-loader": "^2.1.1"
+    "resolve-url-loader": "^2.1.1",
+    "vue-parallaxy": "^1.0.3"
   },
   "scripts": {
     "dev": "HOST=0.0.0.0 nuxt",
@@ -33,6 +36,7 @@
     "eslint-plugin-promise": "^3.4.1",
     "eslint-plugin-react": "^7.4.0",
     "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "vue-parallax": "^1.1.1"
   }
 }

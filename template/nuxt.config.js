@@ -1,12 +1,13 @@
+/**
+ * @type {{build: {extractCSS: boolean}, head: {}, loading: {color: string}, manifest: {theme_color: string}, css: [string], modules: [string,null]}}
+ */
 module.exports = {
   /*
   ** Build configuration
   */
   build: {
     extractCSS: true,
-  },
-  router: {
-    base: '/nuxt-fluent-bootstrap/'
+    publicPath: '/fluent-bootstrap/',
   },
   /*
   ** Headers
@@ -16,7 +17,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: {color: '#3B8070'},
+  loading: { color: '#3B8070' },
   /*
   ** Customize app manifest
   */
@@ -32,6 +33,6 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa',
-    ['@nuxtjs/bootstrap-vue', {css: false}],
+    ['@nuxtjs/bootstrap-vue', { css: false }],
   ],
 };

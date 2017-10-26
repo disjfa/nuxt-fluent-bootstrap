@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Nuxt template using fluent bootstrap",
   "scripts": {
-    "deploy": "gh-pages -d template/dist"
+    "deploy": "copy CNAME template/dist && gh-pages -d template/dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/disjfa/nuxt-fluent-bootstrap#readme",
   "devDependencies": {
+    "copy": "^0.3.1",
     "gh-pages": "^1.0.0"
   }
 }

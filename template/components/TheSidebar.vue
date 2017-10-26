@@ -18,6 +18,12 @@
                         Form
                     </span>
                 </router-link>
+                <router-link :to="{name: 'typography'}" class="sidebar-link" active-class="active">
+                    <i class="fa fa-fw fa-font"></i>
+                    <span class="sidebar-title">
+                        Basic typography
+                    </span>
+                </router-link>
             </li>
         </ul>
     </nav>
@@ -42,7 +48,7 @@
     },
     watch: {
       $route(val) {
-        if(this.opened) {
+        if (this.opened) {
           this.toggleSidebar();
         }
       },

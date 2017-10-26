@@ -19,7 +19,7 @@
   export default {
     components: { TheSidebar },
     mounted() {
-//      console.log(this.$router);
+    //      console.log(this.$router);
     },
   };
 </script>
