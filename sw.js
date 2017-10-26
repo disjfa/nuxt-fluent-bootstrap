@@ -19,32 +19,36 @@ importScripts('workbox-sw.prod.v1.3.0.js');
  */
 const fileManifest = [
   {
-    "url": "/fluent-bootstrap/app.6676eff57b34369f1015.js",
-    "revision": "1793f3747709df3b1fdca029abf4399d"
+    "url": "/fluent-bootstrap/app.7e1a644ce69178933807.js",
+    "revision": "5cc139cd709ab9529ccfa1f7a720691a"
   },
   {
-    "url": "/fluent-bootstrap/common.6bc6ca04799cd9cb5af8.js",
-    "revision": "36b772c9c7051b28a4e27259b338b1b7"
+    "url": "/fluent-bootstrap/common.0e875edb4aa7efd9fbce.js",
+    "revision": "9fa141ea85bde073996d653a54292d67"
   },
   {
     "url": "/fluent-bootstrap/common.9218d25edb424b2358e6b7ae2b397012.css",
     "revision": "a6f06affa8fb4c2296f62dfa77e42c5e"
   },
   {
-    "url": "/fluent-bootstrap/layouts/default.324a25d49ad7575d3328.js",
-    "revision": "adff15508a35dd845c12299960ebad78"
+    "url": "/fluent-bootstrap/layouts/default.1ed7185d288179851b2f.js",
+    "revision": "31d108fcd00c999be98c492ff01bc7c9"
   },
   {
-    "url": "/fluent-bootstrap/manifest.50fff08713b78afa4e1f.js",
-    "revision": "4d68e0a9de5863d961ae2f42c78fed60"
+    "url": "/fluent-bootstrap/manifest.3f6c65a9b371dcb404b8.js",
+    "revision": "2bad8b591a1508eac478c85c560c10c3"
   },
   {
-    "url": "/fluent-bootstrap/pages/form.07e30a033f419ef53185.js",
-    "revision": "d21ece27cd88a5efe3eb0efa7e97e2c3"
+    "url": "/fluent-bootstrap/pages/form.083120407e494903d5db.js",
+    "revision": "f98809813bbf09896a65e78c0fe0d39b"
   },
   {
-    "url": "/fluent-bootstrap/pages/index.75808d042ef2d5a49c71.js",
-    "revision": "8e4ad14fd4482c47554831a589f076d8"
+    "url": "/fluent-bootstrap/pages/index.a22130ccde683f79d7ca.js",
+    "revision": "13aa4663fd6907a60914b65c040936be"
+  },
+  {
+    "url": "/fluent-bootstrap/pages/typography.ea4d2f2373acedb29230.js",
+    "revision": "be70498ea9621f303a4fc51644e4d1a0"
   }
 ];
 
