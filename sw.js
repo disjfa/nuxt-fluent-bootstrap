@@ -1,62 +1,48 @@
-importScripts('workbox-sw.prod.v1.3.0.js');
-
-/**
- * DO NOT EDIT THE FILE MANIFEST ENTRY
- *
- * The method precache() does the following:
- * 1. Cache URLs in the manifest to a local cache.
- * 2. When a network request is made for any of these URLs the response
- *    will ALWAYS comes from the cache, NEVER the network.
- * 3. When the service worker changes ONLY assets with a revision change are
- *    updated, old cache entries are left as is.
- *
- * By changing the file manifest manually, your users may end up not receiving
- * new versions of files because the revision hasn't changed.
- *
- * Please use workbox-build or some other tool / approach to generate the file
- * manifest which accounts for changes to local files and update the revision
- * accordingly.
- */
-const fileManifest = [
-  {
-    "url": "/fluent-bootstrap/app.7e1a644ce69178933807.js",
-    "revision": "5cc139cd709ab9529ccfa1f7a720691a"
-  },
-  {
-    "url": "/fluent-bootstrap/common.0e875edb4aa7efd9fbce.js",
-    "revision": "9fa141ea85bde073996d653a54292d67"
-  },
-  {
-    "url": "/fluent-bootstrap/common.9218d25edb424b2358e6b7ae2b397012.css",
-    "revision": "a6f06affa8fb4c2296f62dfa77e42c5e"
-  },
-  {
-    "url": "/fluent-bootstrap/layouts/default.1ed7185d288179851b2f.js",
-    "revision": "31d108fcd00c999be98c492ff01bc7c9"
-  },
-  {
-    "url": "/fluent-bootstrap/manifest.3f6c65a9b371dcb404b8.js",
-    "revision": "2bad8b591a1508eac478c85c560c10c3"
-  },
-  {
-    "url": "/fluent-bootstrap/pages/form.083120407e494903d5db.js",
-    "revision": "f98809813bbf09896a65e78c0fe0d39b"
-  },
-  {
-    "url": "/fluent-bootstrap/pages/index.a22130ccde683f79d7ca.js",
-    "revision": "13aa4663fd6907a60914b65c040936be"
-  },
-  {
-    "url": "/fluent-bootstrap/pages/typography.ea4d2f2373acedb29230.js",
-    "revision": "be70498ea9621f303a4fc51644e4d1a0"
-  }
-];
+importScripts('/fluent-bootstrap/workbox.3de3418b.js')
 
 const workboxSW = new self.WorkboxSW({
-  "cacheId": "nuxt-fluent-bootstrap_1.0.0",
+  "cacheId": "nuxt-fluent-bootstrap",
   "clientsClaim": true,
   "directoryIndex": "/"
-});
-workboxSW.precache(fileManifest);
-workboxSW.router.registerRoute('/**', workboxSW.strategies.networkFirst({}), 'GET');
-workboxSW.router.registerRoute('/fluent-bootstrap/**', workboxSW.strategies.cacheFirst({}), 'GET');
+})
+
+workboxSW.precache([
+  {
+    "url": "/fluent-bootstrap/app.29a0ed14e6381206874aa27016552760.css",
+    "revision": "29a0ed14e6381206874aa27016552760"
+  },
+  {
+    "url": "/fluent-bootstrap/app.b49793b0b5a770ad47ba.js",
+    "revision": "fe5fa36ce2f4eff35553fe5c65147ee9"
+  },
+  {
+    "url": "/fluent-bootstrap/layouts/default.7d06cf5ff563e36e10f9.js",
+    "revision": "c3cfdf9d8495cd3858cd10953dd808d2"
+  },
+  {
+    "url": "/fluent-bootstrap/manifest.e1fb70ba458bd1ac79ea.js",
+    "revision": "7e90bc9a6386f2261f9dc6413d622cea"
+  },
+  {
+    "url": "/fluent-bootstrap/pages/form.fc3c5f4d4452376c3d14.js",
+    "revision": "1452d984f08b28a3c140a688ec1b71ec"
+  },
+  {
+    "url": "/fluent-bootstrap/pages/index.456e3b8f24331a82391b.js",
+    "revision": "92cb528fa54b846b24e3c6b1a103759c"
+  },
+  {
+    "url": "/fluent-bootstrap/pages/typography.0d6d7bf087fdc1e7b477.js",
+    "revision": "164f1a97d4a55da50a0beca7cea77fa7"
+  },
+  {
+    "url": "/fluent-bootstrap/vendor.fc45bba60de3f7f3934b.js",
+    "revision": "101eef66c7f362912057f38c9dd94b52"
+  }
+])
+
+
+workboxSW.router.registerRoute(new RegExp('/fluent-bootstrap/.*'), workboxSW.strategies.cacheFirst({}), 'GET')
+
+workboxSW.router.registerRoute(new RegExp('/.*'), workboxSW.strategies.networkFirst({}), 'GET')
+
