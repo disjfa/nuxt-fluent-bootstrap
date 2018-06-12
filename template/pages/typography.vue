@@ -17,7 +17,7 @@
           :variant="variant"
           :key="variant"
           href="#">
-          {{ variant }}
+          \{{ variant }}
         </b-button>
       </template>
     </p>
@@ -27,7 +27,7 @@
           :variant="variant"
           :key="variant"
           href="#">
-          {{ variant }}
+          \{{ variant }}
         </b-button>
       </template>
     </p>
@@ -39,7 +39,8 @@
       <p>For more information visit website</p>
       <b-btn
         variant="primary"
-        href="#">More Info
+        href="#">
+        More Info
       </b-btn>
     </b-jumbotron>
     <h3>Headers</h3>

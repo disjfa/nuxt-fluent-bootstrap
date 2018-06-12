@@ -6,10 +6,10 @@
       <div class="col-lg-4">
         <h3>Your information</h3>
         <div>
-          {{ firstname }} {{ lastname }}
+          \{{ firstname }} \{{ lastname }}
         </div>
         <div>
-          {{ phonenumber }}
+          \{{ phonenumber }}
         </div>
       </div>
       <div class="col-lg-8">
