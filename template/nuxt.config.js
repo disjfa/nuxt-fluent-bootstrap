@@ -7,7 +7,7 @@ module.exports = {
   */
   build: {
     extractCSS: true,
-    publicPath: '/fluent-bootstrap/',
+    publicPath: "/fluent-bootstrap/"
   },
   /*
   ** Headers
@@ -17,22 +17,19 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: "#3B8070" },
   /*
   ** Customize app manifest
   */
   manifest: {
-    theme_color: '#3B8070',
+    theme_color: "#3B8070"
   },
   css: [
     // SCSS file in the project
-    'assets/main.scss',
+    "assets/main.scss"
   ],
   /*
   ** Modules
   */
-  modules: [
-    '@nuxtjs/pwa',
-    ['@nuxtjs/bootstrap-vue', { css: false }],
-  ],
-};
+  modules: ["@nuxtjs/pwa", ["@nuxtjs/bootstrap-vue", { css: false }]]
+}

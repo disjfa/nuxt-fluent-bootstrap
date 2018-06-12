@@ -5,16 +5,14 @@
   "author": "disjfa <disjfa@disjfa.nl>",
   "private": true,
   "dependencies": {
-    "@nuxtjs/bootstrap-vue": "^2.0.2",
+    "@nuxtjs/bootstrap-vue": "^2.0.4",
     "@nuxtjs/pwa": "latest",
-    "bootstrap": "^4.0.0-beta.2",
-    "fluent-bootstrap": "^0.1.0",
-    "install": "^0.10.1",
-    "npm": "^5.5.1",
-    "nuxt": "latest",
+    "bootstrap": "^4.1.1",
+    "fluent-bootstrap": "^0.1.1",
+    "nuxt": "^1.4.1",
     "resolve-url": "^0.2.1",
-    "resolve-url-loader": "^2.1.1",
-    "vue-parallaxy": "^1.0.3"
+    "resolve-url-loader": "^2.3.0",
+    "vue-parallaxy": "^1.1.1"
   },
   "scripts": {
     "dev": "HOST=0.0.0.0 nuxt",
@@ -22,21 +20,19 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.1",
-    "eslint": "^4.9.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-import-resolver-webpack": "^0.8.3",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-html": "^3.2.2",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-react": "^7.4.0",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "vue-parallax": "^1.1.1"
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "node-sass": "^4.9.0",
+    "prettier": "^1.13.5",
+    "sass-loader": "^6.0.7"
   }
 }
