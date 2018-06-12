@@ -23,24 +23,28 @@
           A basic setup for nuxt using fluent bootstrap
         </p>
         <h4>Instalation</h4>
-        <code class="d-block py-1 px-1">
-          vue init disjfa/nuxt-fluent-bootstrap
+        <code class="bg-dark text-secondary d-block py-1 px-1">
+          $ npm install -g @vue/cli @vue/cli-init<br>
+          $ vue init disjfa/nuxt-fluent-bootstrap my-project<br>
+          $ cd my-project<br>
+          # install dependencies<br>
+          $ npm install # Or yarn install
         </code>
         <br>
         <h4>Development</h4>
-        <code class="d-block py-1 px-1">
-          npm install
-          npm run dev
+        <code class="bg-dark text-secondary d-block py-1 px-1">
+          # serve with hot reloading at localhost:3000<br>
+          $ npm run dev
         </code>
         <br>
         <h4>Test</h4>
-        <code class="d-block py-1 px-1">
-          npm run lint
+        <code class="bg-dark text-secondary d-block py-1 px-1">
+          $ npm run lint
         </code>
         <br>
         <h4>Generate</h4>
-        <code class="d-block py-1 px-1">
-          npm run generate
+        <code class="bg-dark text-secondary d-block py-1 px-1">
+          $ npm run generate
         </code>
         <br>
         <p>

@@ -9,13 +9,12 @@ Live demo: https://disjfa.github.io/nuxt-fluent-bootstrap/
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
+$ npm install -g @vue/cli @vue/cli-init
 $ vue init disjfa/nuxt-fluent-bootstrap my-project  
 $ cd my-project                     
 # install dependencies
 $ npm install # Or yarn install
 ```
-
-> Make sure to use a version of vue-cli >= 2.1 (`vue -V`).
 
 ## Usage
 
